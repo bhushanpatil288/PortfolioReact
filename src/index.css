@@ -5,9 +5,30 @@ body{
     font-family: "JetBrains Mono", monospace;
 }
 
+/* decorations */
+
 #particles{
     z-index: -999;
     height: 100%;
     width: 100%;
     position: relative;
+}
+
+.custom-btn{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 0px 0px gray;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.custom-btn:hover{
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+.custom-btn:active{
+    box-shadow: inset 0px 0px 3px 5px gray;
 }

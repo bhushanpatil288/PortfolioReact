@@ -1,10 +1,10 @@
-
+import HeroSection from "./HeroSection/HeroSection"
 
 function Main() {
   return (
-    <div>
-      Main
-    </div>
+    <main>
+      <HeroSection />
+    </main>
   )
 }
 

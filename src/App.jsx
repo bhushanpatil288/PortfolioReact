@@ -1,11 +1,12 @@
 import ParticlesComponent from './components/ParticlesComponent'
-import { Header } from "./components/Index"
+import { Header, Main } from "./components/Index"
 
 function App() {
   return (
     <div>
       <ParticlesComponent id="particles" />
       <Header />
+      <Main />
     </div>
   )
 }
