@@ -28,3 +28,12 @@ export const navLinks = [
 // Navbar end
 
 // Header end
+
+// main start
+
+// hero start
+
+
+// hero end
+
+// main end

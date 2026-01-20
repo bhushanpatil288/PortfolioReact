@@ -1,11 +1,13 @@
-import "../../../public/css/header/navbar.css"
+import "../../assets/css/header/navbar.css"
 import { navLinks } from "../../constants/constants"
+import kryptonite from "../../assets/images/black-kryptonite.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar px-5 py-5 flex align-center justify-between">
       {/* logo */}
       <div className="flex justify-center items-center">
+        <img src={kryptonite} width="50px" />
         <p className="glitch">Bhushan's Portfolio</p>
       </div>
 
