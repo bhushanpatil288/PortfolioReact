@@ -1,6 +1,6 @@
 import "../../assets/css/header/navbar.css"
 import { navLinks } from "../../constants/constants"
-import kryptonite from "../../assets/images/black-kryptonite.png";
+import kryptonite from "/images/black-kryptonite.png";
 
 const Navbar = () => {
   return (
