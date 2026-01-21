@@ -6,18 +6,21 @@ export const navLinks = [
     {
         name: "Home",
         url: "#",
+        route: '/',
         target: "_self",
         title: "Visit Home page"
     },
     {
         name: "About",
         url: "#",
+        route: '/about',
         target: "_blank",
         title: "Visit About page"
     },
     {
         name: "Contact",
         url: "#",
+        route: '/contact',
         target: "_blank",
         title: "Visit Contact page"
     }

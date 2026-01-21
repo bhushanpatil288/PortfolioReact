@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import "../../assets/css/header/navbar.css"
 import { navLinks } from "../../constants/constants"
 import logo from "/images/logo-white.png"
@@ -17,7 +18,15 @@ const Navbar = () => {
       <ul className="flex gap-3">
         {navLinks.map((link, idx)=>{
             return <li key={idx} className="flex justify-center items-center">
-                        <a className="nav-links" href={link.url} target={link.target} title={link.title}>{link.name.charAt(0).toUpperCase() + link.name.slice(1)}</a>
+                        <NavLink
+                          to={link.route}
+                          className={({isActive})=>
+                            `${isActive ? 'active' : ''} nav-links`
+                          }
+                          title={link.title}
+                        >
+                          {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
+                        </NavLink>
                     </li>
         })}
       </ul>
