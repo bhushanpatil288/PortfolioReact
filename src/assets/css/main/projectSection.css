@@ -1,5 +1,7 @@
 .project-card{
   box-shadow: 10px 10px 0px 0px gray;
+  background: white;
+  border: 2px solid black;
   height: 100%;
 }
 
@@ -36,18 +38,14 @@
 }
 
 .project-tag{
-  background-color: rgb(87, 222, 252);
+  /* background-color: rgb(87, 222, 252); */
+  border: 1px solid black;
   color: black;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   padding: 4px 20px;
 }
 
 .project-inner-info{
   height: 100%;
-}
-
-.project-hightlight{
-  background-color: rgb(37, 47, 62);
-  border-radius: 8px;
-  padding: 5px 10px;
+  border: 1px solid black;
 }

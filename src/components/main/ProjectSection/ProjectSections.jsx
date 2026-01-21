@@ -11,8 +11,8 @@ function ProjectSections() {
           <ul className="flex flex-wrap gap-5 xl:gap-0">
             {projectsPreview.map((project) => {
               return (
-                <li key={project.id} className="px-5 xl:w-1/2">
-                  <div className="px-10 py-3 bg-slate-900 text-white project-card flex flex-col justify-between overflow-hidden">
+                <li key={project.id} className="px-5 xl:w-1/3">
+                  <div className="px-10 py-3 bg-slate-900 project-card flex flex-col justify-between overflow-hidden">
                     {/* title, img, tags etc */}
                     <div>
                       {/* title */}
@@ -21,7 +21,7 @@ function ProjectSections() {
                       </h3>
 
                       {/* image */}
-                      <div className="card-img-container pt-5">
+                      <div className="card-img-container border">
                         <img src={project.img} />
                       </div>
 
@@ -38,18 +38,18 @@ function ProjectSections() {
                     </div>
 
                     {/* detailed info */}
-                    <div className="project-inner-info bg-black mt-5 px-5 py-6 rounded-md">
+                    <div className="project-inner-info mt-5 px-5 py-6 rounded-md">
                       {/* status */}
                       <div className="font-bold mb-5">
                         <span>Status: </span>
                         <span
-                          className={`${project.status === "completed" ? "bg-green-500 text-black" : project.status === "in-progress" ? "bg-blue-500" : "bg-red-500"} rounded-xl px-3 py-1`}
+                          className={`${project.status === "completed" ? "bg-green-500 text-black" : project.status === "in-progress" ? "bg-blue-500 text-white" : "bg-red-500 text-white"} rounded-xl px-3 py-1 border border-black`}
                         >
                           {project.status}
                         </span>
                       </div>
 
-                      <div className="h-100 flex flex-col justify-around">
+                      <div className="flex flex-col justify-around">
                         {/* description */}
                         <ul>
                           <li>
@@ -59,26 +59,13 @@ function ProjectSections() {
                             {project.description}
                           </li>
                         </ul>
-
-                        {/* hightlights */}
-                        <div className="bg-cyan-900 px-5 py-5 rounded-md">
-                          <h3 className="mb-2">Hightlights: </h3>
-                          <ul className="flex flex-col gap-1">
-                            {project.highlights.map((highlight, idx) => {
-                              return (
-                                <li key={idx} className="project-hightlight">
-                                  {highlight}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
                       </div>
                     </div>
 
                     <div className="flex justify-around mt-5">
-                      <a href={project.live} className="bg-blue-500 px-5 py-2 rounded font-bold">Live</a>
-                      <a href={project.live} className="bg-green-500 px-5 py-2 rounded text-black font-bold">Github</a>                      
+                      <a href={project.live} className="custom-btn border border-black !bg-blue-500 !text-white px-5 py-2 rounded font-bold">Live</a>
+                      <a href={project.live} className="custom-btn border px-5 py-2 rounded font-bold">Details</a>
+                      <a href={project.repo} className="custom-btn border !bg-green-500 px-5 py-2 rounded text-black font-bold">Github</a>                      
                     </div>
                   </div>
                 </li>
