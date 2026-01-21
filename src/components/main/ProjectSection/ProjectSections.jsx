@@ -26,7 +26,7 @@ function ProjectSections() {
                       </div>
 
                       {/* tags */}
-                      <ul className="flex gap-5 mt-4 flex-wrap">
+                      <ul className="flex gap-5 mt-4 flex-wrap text-sm">
                         {project.tags.map((tag, idx) => {
                           return (
                             <li key={idx} className="project-tag">
