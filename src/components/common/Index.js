@@ -1,4 +1,4 @@
 import ProjectCard from "./ProjectCard";
-import Model from "./Model.jsx";
+import Modal from "./Modal.jsx";
 
-export { ProjectCard, Model }
+export { ProjectCard, Modal }

@@ -1,6 +1,7 @@
-
+import { Modal } from "./Index";
 
 function ProjectCard({ projectsPreview }) {
+
   return (
     <>
       <ul className="flex flex-wrap gap-5 xl:gap-0">
@@ -33,7 +34,7 @@ function ProjectCard({ projectsPreview }) {
                     </div>
 
                     {/* detailed info */}
-                    <div className="project-inner-info mt-5 px-5 py-6 rounded-md">
+                    <div className="project-inner-info mt-5 px-5 py-6 rounded-md flex flex-col justify-center">
                       {/* status */}
                       <div className="font-bold mb-5">
                         <span>Status: </span>
@@ -59,7 +60,7 @@ function ProjectCard({ projectsPreview }) {
 
                     <div className="flex justify-around mt-5">
                       <a target="_blank" href={project.live} className="custom-btn border border-black !bg-blue-500 !text-white px-5 py-2 rounded font-bold">Live</a>
-                      <a target="_blank" href={project.live} className="custom-btn border px-5 py-2 rounded font-bold">Details</a>
+                      <Modal projectId={project.id} />
                       <a target="_blank" href={project.repo} className="custom-btn border !bg-green-500 px-5 py-2 rounded text-black font-bold">Github</a>                      
                     </div>
                   </div>

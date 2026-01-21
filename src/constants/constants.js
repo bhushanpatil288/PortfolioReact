@@ -93,6 +93,33 @@ export const projectsPreview = [
             "frontend",
             "fundamentals"
         ]
+    },
+    {
+        id: "ems",
+        name: "Employee Management System",
+        img: "/images/projects-img/ems.png",
+
+        type: "academic",
+        status: "completed",
+        year: 2025,
+
+        stack: ["html", "css", "js"],
+        
+        description: "This was made as an assignment in Red and White Multimedia Institute as a part of learning localStorage",
+
+        highlights: [
+            "using localStorage for persistence of state",
+            "multipage data sharing"
+        ],
+
+        repo: "https://github.com/bhushanpatil288/EMSAssignmentProject",
+        live: "https://bhushanpatil288.github.io/EMSAssignmentProject/",
+
+        tags: [
+            "api",
+            "frontend",
+            "fundamentals"
+        ]
     }
 ]
 

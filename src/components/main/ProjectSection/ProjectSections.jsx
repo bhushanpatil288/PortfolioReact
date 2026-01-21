@@ -1,6 +1,6 @@
 import { projectsPreview } from "../../../constants/constants";
 import "../../../assets/css/main/projectSection.css";
-import { ProjectCard, Model } from "../../common/Index.js"
+import { ProjectCard } from "../../common/Index.js"
 
 function ProjectSections() {
   return (
@@ -12,7 +12,6 @@ function ProjectSections() {
 
           <ProjectCard projectsPreview={projectsPreview}/>
 
-          <Model />
         </div>
       </div>
     </section>
