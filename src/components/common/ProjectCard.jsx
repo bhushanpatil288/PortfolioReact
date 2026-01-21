@@ -4,10 +4,10 @@ function ProjectCard({ projectsPreview }) {
 
   return (
     <>
-      <ul className="flex flex-wrap gap-5 xl:gap-0">
+      <ul className="flex flex-wrap xl:gap-0">
             {projectsPreview.map((project) => {
               return (
-                <li key={project.id} className="px-5 xl:w-1/3">
+                <li key={project.id} className="px-5 py-5 lg:w-1/2 xl:w-1/3">
                   <div className="px-10 py-3 bg-slate-900 project-card flex flex-col justify-between overflow-hidden">
                     {/* title, img, tags etc */}
                     <div>
