@@ -88,3 +88,13 @@
 }
 
 /* nav links end */
+
+/* nav menu start */
+
+.menu{
+    right: 0;
+    top: 100px;
+    z-index: 999;
+}
+
+/* nav menu end */

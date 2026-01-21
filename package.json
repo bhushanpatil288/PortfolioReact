@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
+    "@remixicon/react": "^4.8.0",
     "@tailwindcss/vite": "^4.1.18",
     "@tsparticles/react": "^3.0.0",
     "react": "^19.1.1",

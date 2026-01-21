@@ -1,11 +1,20 @@
+import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import "../../assets/css/header/navbar.css"
 import { navLinks } from "../../constants/constants"
 import logo from "/images/logo-white.png"
+import MobileMenu from "./mobileMenu"
+import { RiMenuLine } from "@remixicon/react"
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu(){
+    setIsOpen((prev)=>!prev)
+  }
+
   return (
-    <nav className="navbar px-5 py-5 flex align-center justify-between">
+    <nav className="navbar px-5 py-5 flex align-center justify-between relative">
       {/* logo */}
       <a href="#">
       <div className="flex justify-center items-center gap-3">
@@ -17,7 +26,7 @@ const Navbar = () => {
       {/* nav items */}
       <ul className="flex gap-3">
         {navLinks.map((link, idx)=>{
-            return <li key={idx} className="flex justify-center items-center">
+            return <li key={idx} className="flex justify-center items-center hidden md:flex">
                         <NavLink
                           to={link.route}
                           className={({isActive})=>
@@ -29,7 +38,13 @@ const Navbar = () => {
                         </NavLink>
                     </li>
         })}
+        <li onClick={()=>toggleMenu()} className="flex justify-center items-center cursor-pointer md:hidden">
+          <RiMenuLine />
+        </li>
       </ul>
+
+       
+     <MobileMenu navLinks={navLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
     </nav>
   )
 }
