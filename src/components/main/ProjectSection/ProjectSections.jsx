@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import "./projectSection.css";
 import ProjectCards from "../../common/ProjectCards.jsx";
-import { projectsPreview } from "../../../constants/constants";
+import { projectsPreview } from "../../../constants/constants.js";
 
 function ProjectSections() {
   return (

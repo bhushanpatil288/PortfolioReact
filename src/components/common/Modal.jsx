@@ -10,7 +10,6 @@ import {
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
 export default function Example({ project }) {
-  console.log(project);
   const [open, setOpen] = useState(false);
 
   return (
