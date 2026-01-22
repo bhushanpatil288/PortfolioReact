@@ -116,9 +116,9 @@ export const projectsPreview = [
         live: "https://bhushanpatil288.github.io/EMSAssignmentProject/",
 
         tags: [
-            "api",
+            "LocalStorage",
             "frontend",
-            "fundamentals"
+            "state-persistence"
         ]
     }
 ]
