@@ -52,7 +52,7 @@ export default function Example({ project }) {
                           <div>
                             {/* image */}
                             <div className="card-img-container border">
-                              <img src={project.img} />
+                              <img src={project.img} className="grayscale"/>
                             </div>
 
                             {/* tags */}
@@ -73,7 +73,7 @@ export default function Example({ project }) {
                             <div className="font-bold mb-5">
                               <span>Status: </span>
                               <span
-                                className={`${project.status === "completed" ? "bg-green-500 text-black" : project.status === "in-progress" ? "bg-blue-500 text-white" : "bg-red-500 text-white"} rounded-xl px-3 py-1 border border-black`}
+                                className={`${project.status === "completed" ? "bg-gray-700 text-white" : project.status === "in-progress" ? "bg-gray-500 text-white" : "bg-gray-400 text-white"} rounded-xl px-3 py-1 border border-black`}
                               >
                                 {project.status}
                               </span>
@@ -83,7 +83,7 @@ export default function Example({ project }) {
                               {/* description */}
                               <ul>
                                 <li>
-                                  <span className="text-amber-500 font-bold">
+                                  <span className="text-gray-500 font-bold">
                                     Description:{" "}
                                   </span>
                                   {project.description}
@@ -124,7 +124,7 @@ export default function Example({ project }) {
                 <button
                   type="button"
                   onClick={() => setOpen(false)}
-                  className="inline-flex w-full border border-black justify-center custom-btn !text-white !bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-500 sm:ml-3 sm:w-auto"
+                  className="inline-flex w-full border border-black justify-center custom-btn !text-white !bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-500 sm:ml-3 sm:w-auto"
                 >
                   close
                 </button>

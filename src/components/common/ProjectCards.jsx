@@ -17,7 +17,7 @@ function ProjectCards({ projectsPreview }) {
 
                   {/* image */}
                   <div className="card-img-container border">
-                    <img src={project.img} />
+                    <img src={project.img} className="grayscale" />
                   </div>
 
                   {/* tags */}
@@ -38,7 +38,7 @@ function ProjectCards({ projectsPreview }) {
                   <div className="font-bold mb-5">
                     <span>Status: </span>
                     <span
-                      className={`${project.status === "completed" ? "bg-green-500 text-black" : project.status === "in-progress" ? "bg-blue-500 text-white" : "bg-red-500 text-white"} rounded-xl px-3 py-1 border border-black`}
+                      className={`${project.status === "completed" ? "bg-gray-700 text-white" : project.status === "in-progress" ? "bg-gray-500 text-white" : "bg-gray-400 text-white"} rounded-xl px-3 py-1 border border-black`}
                     >
                       {project.status}
                     </span>
@@ -48,7 +48,7 @@ function ProjectCards({ projectsPreview }) {
                     {/* description */}
                     <ul>
                       <li>
-                        <span className="text-amber-500 font-bold">
+                        <span className="text-gray-500 font-bold">
                           Description:{" "}
                         </span>
                         {project.description}
@@ -61,7 +61,7 @@ function ProjectCards({ projectsPreview }) {
                   <a
                     target="_blank"
                     href={project.live}
-                    className="custom-btn border border-black !bg-blue-500 !text-white px-5 py-2 rounded font-bold"
+                    className="custom-btn border border-black !bg-gray-500 !text-white px-5 py-2 rounded font-bold"
                   >
                     Live
                   </a>
@@ -69,7 +69,7 @@ function ProjectCards({ projectsPreview }) {
                   <a
                     target="_blank"
                     href={project.repo}
-                    className="custom-btn border !bg-green-500 px-5 py-2 rounded text-black font-bold"
+                    className="custom-btn border !bg-gray-600 px-5 py-2 rounded !text-white font-bold"
                   >
                     Github
                   </a>
