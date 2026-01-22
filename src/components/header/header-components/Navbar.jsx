@@ -1,10 +1,17 @@
+// react
 import { useState } from "react"
+
+// libraries
 import { NavLink } from "react-router-dom"
-import "../../assets/css/header/navbar.css"
-import { navLinks } from "../../constants/constants"
+import { RiMenuLine } from "@remixicon/react"
+
+// custom
 import logo from "/images/logo-white.png"
 import MobileMenu from "./mobileMenu"
-import { RiMenuLine } from "@remixicon/react"
+import "../header-css/navbar.css"
+import { navLinks } from "../../../constants/constants"
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,4 +1,4 @@
-import { Modal } from "./Index";
+import Modal from "./Modal";
 
 function ProjectCards({ projectsPreview }) {
   return (

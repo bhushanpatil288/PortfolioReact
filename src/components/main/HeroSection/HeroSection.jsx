@@ -1,5 +1,8 @@
-import "../../../assets/css/main/heroSection.css";
+// libraries
 import { Link } from "react-router-dom"
+
+// custom
+import "./heroSection.css"
 
 function HeroSection() {
   return (

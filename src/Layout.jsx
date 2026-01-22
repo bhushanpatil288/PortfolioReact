@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import { Header, Footer, Main } from './components/Index'
+import { Header, Footer } from './components/Index'
 import ParticlesComponent from './components/ParticlesComponent'
 
 function Layout() {

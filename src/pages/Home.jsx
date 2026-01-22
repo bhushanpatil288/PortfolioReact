@@ -1,4 +1,4 @@
-import Main from '../components/main/Main'
+import { Main } from "../components/Index.js"
 function Home() {
   return (
     <div>
