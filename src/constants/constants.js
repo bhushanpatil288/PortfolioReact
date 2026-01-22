@@ -1,39 +1,37 @@
 // Header start
 
 // Navbar start
- 
+
 export const navLinks = [
-    {
-        name: "Home",
-        url: "#",
-        route: '/',
-        target: "_self",
-        title: "Visit Home page"
-    },
-    {
-        name: "Projects",
-        url: "#",
-        route: '/projects',
-        target: "_blank",
-        title: "View all projects"
-    },
-    {
-        name: "About",
-        url: "#",
-        route: '/about',
-        target: "_blank",
-        title: "Visit About page"
-    },
-    {
-        name: "Contact",
-        url: "#",
-        route: '/contact',
-        target: "_blank",
-        title: "Visit Contact page"
-    }
-]
-
-
+  {
+    name: "Home",
+    url: "#",
+    route: "/",
+    target: "_self",
+    title: "Visit Home page",
+  },
+  {
+    name: "Projects",
+    url: "#",
+    route: "/projects",
+    target: "_blank",
+    title: "View all projects",
+  },
+  {
+    name: "About",
+    url: "#",
+    route: "/about",
+    target: "_blank",
+    title: "Visit About page",
+  },
+  {
+    name: "Contact",
+    url: "#",
+    route: "/contact",
+    target: "_blank",
+    title: "Visit Contact page",
+  },
+];
 
 // Navbar end
 
@@ -44,178 +42,323 @@ export const navLinks = [
 // projects start
 
 export const projectsPreview = [
-    {
-        id: "portfolio-react",
-        name: "Portfolio (React)",
-        img: "/images/projects-img/portfolio-react.png",
+  {
+    id: "portfolio-react",
+    name: "Portfolio (React)",
+    img: "/images/projects-img/portfolio-react.png",
 
-        type: "personal", // academic | freelance | experiment
-        status: "in-progress", // completed | in-progress | paused
-        year: 2025,
+    type: "personal", // academic | freelance | experiment
+    status: "in-progress", // completed | in-progress | paused
+    year: 2025,
 
-        stack: ["html", "css", "js", "react"],
-        
-        description: "This was my project to test my react skills as well as making a fresh portfolio site to showcase my latest skills.",
+    stack: ["html", "css", "js", "react"],
 
-        highlights: [
-            "Data-driven UI using centralized configuration objects",
-            "Component-based architecture",
-            "Responsive layout with Tailwind",
-            "Focused on clarity over visual noise"
-        ],
+    description:
+      "This was my project to test my react skills as well as making a fresh portfolio site to showcase my latest skills.",
 
-        repo: "https://github.com/bhushanpatil288/PortfolioReact",
-        live: "https://portfolio-react-five-opal.vercel.app/",
+    highlights: [
+      "Data-driven UI using centralized configuration objects",
+      "Component-based architecture",
+      "Responsive layout with Tailwind",
+      "Focused on clarity over visual noise",
+    ],
 
-        tags: [
-            "frontend",
-            "react",
-            "portfolio",
-            "fundamentals"
-        ]
-    },
-    {
-        id: "simple-weather-checker",
-        name: "Weather Checker",
-        img: "/images/projects-img/simple-weather-checker.png",
+    repo: "https://github.com/bhushanpatil288/PortfolioReact",
+    live: "https://portfolio-react-five-opal.vercel.app/",
 
-        type: "academic",
-        status: "completed",
-        year: 2025,
+    tags: ["frontend", "react", "portfolio", "fundamentals"],
+  },
+  {
+    id: "simple-weather-checker",
+    name: "Weather Checker",
+    img: "/images/projects-img/simple-weather-checker.png",
 
-        stack: ["html", "css", "js"],
-        
-        description: "This was made as an assignment in Red and White Multimedia Institute as a part of learning api",
+    type: "academic",
+    status: "completed",
+    year: 2025,
 
-        highlights: [
-            "using public api",
-            "Making use of api data to update ui"
-        ],
+    stack: ["html", "css", "js"],
 
-        repo: "https://github.com/bhushanpatil288/weather-api",
-        live: "https://bhushanpatil288.github.io/weather-api/",
+    description:
+      "This was made as an assignment in Red and White Multimedia Institute as a part of learning api",
 
-        tags: [
-            "api",
-            "frontend",
-            "fundamentals"
-        ]
-    },
-    {
-        id: "ems",
-        name: "Employee Management System",
-        img: "/images/projects-img/ems.png",
+    highlights: ["using public api", "Making use of api data to update ui"],
 
-        type: "academic",
-        status: "completed",
-        year: 2025,
+    repo: "https://github.com/bhushanpatil288/weather-api",
+    live: "https://bhushanpatil288.github.io/weather-api/",
 
-        stack: ["html", "css", "js"],
-        
-        description: "This was made as an assignment in Red and White Multimedia Institute as a part of learning localStorage",
+    tags: ["api", "frontend", "fundamentals"],
+  },
+  {
+    id: "ems",
+    name: "Employee Management System",
+    img: "/images/projects-img/ems.png",
 
-        highlights: [
-            "using localStorage for persistence of state",
-            "multipage data sharing"
-        ],
+    type: "academic",
+    status: "completed",
+    year: 2025,
 
-        repo: "https://github.com/bhushanpatil288/EMSAssignmentProject",
-        live: "https://bhushanpatil288.github.io/EMSAssignmentProject/",
+    stack: ["html", "css", "js"],
 
-        tags: [
-            "LocalStorage",
-            "frontend",
-            "state-persistence"
-        ]
-    }
-]
+    description:
+      "This was made as an assignment in Red and White Multimedia Institute as a part of learning localStorage",
+
+    highlights: [
+      "using localStorage for persistence of state",
+      "multipage data sharing",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/EMSAssignmentProject",
+    live: "https://bhushanpatil288.github.io/EMSAssignmentProject/",
+
+    tags: ["LocalStorage", "frontend", "state-persistence"],
+  },
+];
 
 export const allProjects = [
-    {
-        id: "portfolio-react",
-        name: "Portfolio (React)",
-        img: "/images/projects-img/portfolio-react.png",
+  {
+    id: "portfolio-react",
+    name: "Portfolio (React)",
+    img: "/images/projects-img/portfolio-react.png",
 
-        type: "personal", // academic | freelance | experiment
-        status: "in-progress", // completed | in-progress | paused
-        year: 2025,
+    type: "personal", // academic | freelance | experiment
+    status: "in-progress", // completed | in-progress | paused
+    year: 2026,
 
-        stack: ["html", "css", "js", "react"],
-        
-        description: "This was my project to test my react skills as well as making a fresh portfolio site to showcase my latest skills.",
+    stack: ["html", "css", "js", "react"],
 
-        highlights: [
-            "Data-driven UI using centralized configuration objects",
-            "Component-based architecture",
-            "Responsive layout with Tailwind",
-            "Focused on clarity over visual noise"
-        ],
+    description:
+      "This was my project to test my react skills as well as making a fresh portfolio site to showcase my latest skills.",
 
-        repo: "https://github.com/bhushanpatil288/PortfolioReact",
-        live: "https://portfolio-react-five-opal.vercel.app/",
+    highlights: [
+      "Data-driven UI using centralized configuration objects",
+      "Component-based architecture",
+      "Responsive layout with Tailwind",
+      "Focused on clarity over visual noise",
+    ],
 
-        tags: [
-            "frontend",
-            "react",
-            "portfolio",
-            "fundamentals"
-        ]
-    },
-    {
-        id: "simple-weather-checker",
-        name: "Weather Checker",
-        img: "/images/projects-img/simple-weather-checker.png",
+    repo: "https://github.com/bhushanpatil288/PortfolioReact",
+    live: "https://portfolio-react-five-opal.vercel.app/",
 
-        type: "academic",
-        status: "completed",
-        year: 2025,
+    tags: ["frontend", "react", "portfolio", "fundamentals"],
+  },
+   {
+    id: "portfolio",
+    name: "Portfolio",
+    img: "/images/projects-img/portfolio.png",
 
-        stack: ["html", "css", "js"],
-        
-        description: "This was made as an assignment in Red and White Multimedia Institute as a part of learning api",
+    type: "personal", // academic | freelance | experiment
+    status: "completed", // completed | in-progress | paused
+    year: 2025,
 
-        highlights: [
-            "using public api",
-            "Making use of api data to update ui"
-        ],
+    stack: ["html", "css", "js"],
 
-        repo: "https://github.com/bhushanpatil288/weather-api",
-        live: "https://bhushanpatil288.github.io/weather-api/",
+    description:
+      "This was my old portfolio made with pure html, css, js.",
 
-        tags: [
-            "api",
-            "frontend",
-            "fundamentals"
-        ]
-    },
-    {
-        id: "ems",
-        name: "Employee Management System",
-        img: "/images/projects-img/ems.png",
+    highlights: [
+      "Beautiful visuals",
+      "Responsive layout with bootstrap",
+      "Focused on clarity over visual noise",
+    ],
 
-        type: "academic",
-        status: "completed",
-        year: 2025,
+    repo: "https://github.com/bhushanpatil288/portfolio",
+    live: "https://bhushanpatil288.github.io/portfolio/",
 
-        stack: ["html", "css", "js"],
-        
-        description: "This was made as an assignment in Red and White Multimedia Institute as a part of learning localStorage",
+    tags: ["frontend", "portfolio", "fundamentals"],
+  },
+  {
+    id: "simple-weather-checker",
+    name: "Weather Checker",
+    img: "/images/projects-img/simple-weather-checker.png",
 
-        highlights: [
-            "using localStorage for persistence of state",
-            "multipage data sharing"
-        ],
+    type: "academic",
+    status: "completed",
+    year: 2026,
 
-        repo: "https://github.com/bhushanpatil288/EMSAssignmentProject",
-        live: "https://bhushanpatil288.github.io/EMSAssignmentProject/",
+    stack: ["html", "css", "js"],
 
-        tags: [
-            "LocalStorage",
-            "frontend",
-            "state-persistence"
-        ]
-    }
-]
+    description:
+      "This was made as an assignment in Red and White Multimedia Institute as a part of learning api",
+
+    highlights: ["using public api", "Making use of api data to update ui"],
+
+    repo: "https://github.com/bhushanpatil288/weather-api",
+    live: "https://bhushanpatil288.github.io/weather-api/",
+
+    tags: ["api", "frontend", "fundamentals"],
+  },
+  {
+    id: "ems",
+    name: "Employee Management System",
+    img: "/images/projects-img/ems.png",
+
+    type: "academic",
+    status: "completed",
+    year: 2025,
+
+    stack: ["html", "css", "js"],
+
+    description:
+      "This was made as an assignment in Red and White Multimedia Institute as a part of learning CRUD and localStorage",
+
+    highlights: [
+      "using localStorage for persistence of state",
+      "multipage data sharing",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/EMSAssignmentProject",
+    live: "https://bhushanpatil288.github.io/EMSAssignmentProject/",
+
+    tags: ["CRUD", "LocalStorage", "frontend", "state-persistence"],
+  },
+  {
+    id: "corona-api",
+    name: "Corona Api Project",
+    img: "/images/projects-img/corona-api.png",
+
+    type: "academic",
+    status: "completed",
+    year: 2026,
+
+    stack: ["html", "css", "js"],
+
+    description:
+      "This was made as an assignment in Red and White Multimedia Institute as a part of learning api",
+
+    highlights: ["using api to fetch data of indian states"],
+
+    repo: "https://github.com/bhushanpatil288/corona-api",
+    live: "https://bhushanpatil288.github.io/corona-api/",
+
+    tags: ["api", "frontend"],
+  },
+  {
+    id: "add-to-cart",
+    name: "Add To Cart",
+    img: "/images/projects-img/add-to-cart.png",
+
+    type: "academic",
+    status: "completed",
+    year: 2025,
+
+    stack: ["html", "css", "js"],
+
+    description:
+      "A simple add-to-cart project focused on DOM manipulation and cart state handling.",
+
+    highlights: [
+      "Dynamic cart updates",
+      "Quantity handling logic",
+      "DOM-based state management",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/add-to-cart",
+    live: "https://bhushanpatil288.github.io/add-to-cart/cart.html",
+
+    tags: ["dom", "frontend", "fundamentals"],
+  },
+  {
+    id: "quote-countdown",
+    name: "Quote Countdown",
+    img: "/images/projects-img/quote-countdown.png",
+
+    type: "academic",
+    status: "completed",
+    year: 2025,
+
+    stack: ["html", "css", "js"],
+
+    description:
+      "A countdown-based project that displays quotes dynamically over time.",
+
+    highlights: [
+      "Timer-based logic",
+      "Dynamic content rendering",
+      "Basic state control",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/Quote-CountDown",
+    live: "https://bhushanpatil288.github.io/Quote-CountDown/",
+
+    tags: ["javascript", "timers", "frontend"],
+  },
+  {
+    id: "student-management-system",
+    name: "Student Management System",
+    img: "/images/projects-img/student-management-system.png",
+
+    type: "academic",
+    status: "completed",
+    year: 2026,
+
+    stack: ["html", "css", "js"],
+
+    description:
+      "A CRUD-based student management system built to practice form handling and data manipulation.",
+
+    highlights: [
+      "CRUD operations",
+      "Form validation",
+      "Structured data handling",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/StudentManagementSystem",
+    live: "https://bhushanpatil288.github.io/StudentManagementSystem/",
+
+    tags: ["crud", "frontend", "fundamentals"],
+  },
+  {
+    id: "array-string-projects",
+    name: "Array & String Projects",
+    img: "/images/projects-img/array-string-projects.png",
+
+    type: "academic",
+    status: "completed",
+    year: 2025,
+
+    stack: ["html", "css", "js"],
+
+    description:
+      "A collection of small projects focused on array and string manipulation in JavaScript.",
+
+    highlights: [
+      "Array methods practice",
+      "String manipulation logic",
+      "Problem-solving focused tasks",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/array-string-projects",
+    live: "https://bhushanpatil288.github.io/array-string-projects/",
+
+    tags: ["javascript", "logic-building", "fundamentals"],
+  },
+  {
+    id: "pro-motors-clone",
+    name: "Pro Motors Clone",
+    img: "/images/projects-img/pro-motors-clone.png",
+
+    type: "experiment",
+    status: "completed",
+    year: 2025,
+
+    stack: ["html", "css", "js"],
+
+    description:
+      "A UI clone of the Pro Motors website built to practice layout, styling, and visual replication.",
+
+    highlights: [
+      "Layout replication",
+      "CSS positioning",
+      "Attention to visual details",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/pro-motors-clone",
+    live: "http://bhushanpatil288.github.io/pro-motors-clone/",
+
+    tags: ["ui-clone", "css", "frontend"],
+  },
+];
 
 // projects end
 
