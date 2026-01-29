@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom"
-import SocialLinks from "./SocialLinks"
-
 function About() {
   return (
     <>
@@ -32,9 +30,6 @@ function About() {
                 <button className="custom-btn">About</button>
               </Link>
             </div>
-           </div>
-           <div>
-            <SocialLinks />
            </div>
         </div>
     </>
