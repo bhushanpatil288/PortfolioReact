@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar px-5 py-5 flex align-center justify-between relative">
+    <nav className="navbar px-5 py-5 flex align-center justify-between relative top-deco bot-deco">
       {/* logo */}
       <a href="#">
       <div className="flex justify-center items-center gap-3">

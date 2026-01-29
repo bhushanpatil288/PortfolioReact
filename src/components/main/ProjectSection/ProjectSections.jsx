@@ -6,7 +6,7 @@ import { projectsPreview } from "../../../constants/constants.js";
 
 function ProjectSections() {
   return (
-    <section className="mt-30">
+    <section className="mt-30 overflow-hidden">
       <div className="container mx-auto">
         <h2 className="font-bold text-4xl text-center">Projects Showcase</h2>
 

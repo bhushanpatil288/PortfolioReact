@@ -9,7 +9,7 @@ function HeroSection() {
     <section>
       <div className="container flex mx-auto sm:mt-20 sm:gap-10 flex-wrap xl:gap-0">
         {/* Hero Heading */}
-        <div className="select-none hero-heading w-full xl:w-1/2 text-white px-10 py-10 bg-black flex flex-col justify-between">
+        <div className="select-none hero-heading w-full xl:w-1/2 text-white px-10 py-10 bg-black flex flex-col justify-between top-deco bot-deco">
          <div>
            <h1 className=" text-5xl font-semibold">
             I'm Bhushan <br />
@@ -36,7 +36,7 @@ function HeroSection() {
 
         {/* hero code block */}
         <div className="w-full xl:px-6 xl:w-1/2">
-          <pre className="code-block bg-black border border-black p-6 text-sm overflow-x-auto">
+          <pre className="code-block bg-black border border-black p-6 text-sm overflow-x-auto top-deco bot-deco">
             <code className="font-mono text-slate-200">
               <span className="text-indigo-400 font-bold">const</span>{" "}
               <span className="text-cyan-400 font-bold">bio</span>{" "}
