@@ -35,8 +35,8 @@ function HeroSection() {
         </div>
 
         {/* hero code block */}
-        <div className="w-full xl:px-6 xl:w-1/2 mt-10">
-          <pre className="code-block bg-black border border-black p-6 text-sm overflow-x-auto top-deco bot-deco">
+        <div className="w-full xl:px-6 xl:w-1/2 mt-10 md:mt-0">
+          <pre className="code-block bg-black p-6 text-sm overflow-x-auto top-deco bot-deco">
             <code className="font-mono text-slate-200">
               <span className="text-indigo-400 font-bold">const</span>{" "}
               <span className="text-cyan-400 font-bold">bio</span>{" "}
