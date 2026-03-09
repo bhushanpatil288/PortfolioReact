@@ -43,18 +43,18 @@ export const navLinks = [
 
 export const projectsPreview = [
   {
-    id: "portfolio-react",
-    name: "Portfolio (React)",
-    img: "/images/projects-img/portfolio-react.png",
+    id: "plan-fast",
+    name: "PlanFast(React)",
+    img: "/images/projects-img/plan-fast.png",
 
     type: "personal", // academic | freelance | experiment
     status: "in-progress", // completed | in-progress | paused
-    year: 2025,
+    year: 2026,
 
-    stack: ["html", "css", "js", "react"],
+    stack: ["react", "js", "react-router-dom"],
 
     description:
-      "This was my project to test my react skills as well as making a fresh portfolio site to showcase my latest skills.",
+      "A CRUD SPA for everyday planning",
 
     highlights: [
       "Data-driven UI using centralized configuration objects",
@@ -63,10 +63,10 @@ export const projectsPreview = [
       "Focused on clarity over visual noise",
     ],
 
-    repo: "https://github.com/bhushanpatil288/PortfolioReact",
-    live: "https://portfolio-react-five-opal.vercel.app/",
+    repo: "https://github.com/bhushanpatil288/PlanFast",
+    live: "https://todo-list-react-y35c.vercel.app/",
 
-    tags: ["frontend", "react", "portfolio", "fundamentals"],
+    tags: ["react", "react-router-dom", "CRUD", "localStorage"],
   },
   {
     id: "simple-weather-checker",
@@ -116,6 +116,32 @@ export const projectsPreview = [
 ];
 
 export const allProjects = [
+  {
+    id: "plan-fast",
+    name: "PlanFast(React)",
+    img: "/images/projects-img/plan-fast.png",
+
+    type: "personal", // academic | freelance | experiment
+    status: "in-progress", // completed | in-progress | paused
+    year: 2026,
+
+    stack: ["react", "js", "react-router-dom"],
+
+    description:
+      "A CRUD SPA for everyday planning",
+
+    highlights: [
+      "Data-driven UI using centralized configuration objects",
+      "Component-based architecture",
+      "Responsive layout with Tailwind",
+      "Focused on clarity over visual noise",
+    ],
+
+    repo: "https://github.com/bhushanpatil288/PlanFast",
+    live: "https://todo-list-react-y35c.vercel.app/",
+
+    tags: ["react", "react-router-dom", "CRUD", "localStorage"],
+  },
   {
     id: "portfolio-react",
     name: "Portfolio (React)",
